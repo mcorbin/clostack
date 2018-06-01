@@ -94,5 +94,5 @@
       0 (do (Thread/sleep 1000)
             (polling-request client jobid))
       1 jobresult
-      (throw (ex-info (str "job" jobid "failed")
+      (throw (ex-info (str "job " jobid " failed")
                       {:jobresult jobresult})))))
